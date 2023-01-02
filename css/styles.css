@@ -116,7 +116,7 @@ header {
 }
 .mobile-menu-open {
     background-color: transparent;
-    border: none;
+    /* border: none; */
     padding: 0;
     line-height: 0;
 }
