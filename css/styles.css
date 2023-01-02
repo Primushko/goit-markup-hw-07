@@ -94,12 +94,31 @@ header {
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;        
-    }
+    }  
 }
 @media screen and (min-width: 1200px) {
     .container {
         width: 1160px;        
     }
+}
+@media screen and (max-width: 767px) {
+    .navigation {
+        display: none;
+    }
+    .navigation-link {
+        display: none;
+    }
+}
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-menu-open {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
 }
 /* .container-nav {
     display: flex;
