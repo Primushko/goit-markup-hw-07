@@ -91,6 +91,16 @@ header {
         margin-right: auto;
     }
 }
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;        
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1160px;        
+    }
+}
 /* .container-nav {
     display: flex;
     align-items: center;    
