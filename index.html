@@ -28,7 +28,7 @@
                         <li class="nav-item"><a class="link-padding" href="#">Contacts</a></li>
                     </ul>
                     </nav>
-                    <button type="button" class="mobile-menu-open">
+                    <button type="button" class="mobile-menu-open js-open-menu">
                         <svg class="mobile-menu-open-ikon" width="32" height="22">
                             <use href="./img/hw6symbol-defs.svg#icon-hamburger"></use>
                         </svg>
@@ -39,9 +39,9 @@
                     </ul>
                 </div>                     
             </div>
-            <div class="mobile-menu">
+            <div class="mobile-menu js-menu-container">
                 <div class="container mobile-menu-container">
-                    <button class="mobile-menu-close-btn">
+                    <button class="mobile-menu-close-btn js-close-menu">
                     <svg class="mobile-menu-close-icon" width="24" height="24">
                         <use href="./img/hw6symbol-defs.svg#icon-close"></use>
                     </svg>
@@ -474,6 +474,7 @@
                 </form>
             </div>
         </div>
-        <script src="./js/modal.js"></script>
+        <script defer src="./js/mobile-menu.js"></script>
+        <!-- <script src="./js/modal.js"></script> -->
     </body>
 </html>
