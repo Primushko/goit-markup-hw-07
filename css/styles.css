@@ -120,6 +120,24 @@ header {
     padding: 0;
     line-height: 0;
 }
+.mobile-menu {
+    position: fixed;
+    width: 428px;
+    height: 796px;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.mobile-menu-close-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
 /* .container-nav {
     display: flex;
     align-items: center;    
