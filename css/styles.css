@@ -116,7 +116,7 @@ header {
 }
 .mobile-menu-open {
     background-color: transparent;
-    /* border: none; */
+    border: none;
     padding: 0;
     line-height: 0;
 }
@@ -124,6 +124,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100%;
+    max-height: 796px;
     z-index: 1000;
     top: 0;
     left: 0;
