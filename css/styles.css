@@ -164,6 +164,17 @@ header {
     .container {
         width: 1160px;        
     }
+    .navigation-link {
+        display: flex;
+        margin-left: auto;
+        font-family: 'Roboto';     
+        font-size: 16px;
+        line-height: 1.5;  
+        letter-spacing: 0.02em;       
+    }
+    .navigation-link .link-item + .link-item {
+        margin-left: 40px;
+    }
 }
 /* мобільне меню до 768 */
 @media screen and (max-width: 767px) {
