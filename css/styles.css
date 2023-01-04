@@ -399,7 +399,7 @@ header {
 /* section-herro */
 .herro {
     /* padding: 192px 0;     */
-    /* text-align: center;   */
+    text-align: center;  
     /* max-width: 1440px;  
     min-height: 603px; */
     margin-left: auto;
@@ -442,15 +442,15 @@ header {
     background-color: var(--button-click-color);
 }
     /* section-features */
-/* .section-features {        
+.section-features {        
     background-color: var(--white-text-color); 
     padding: 120px 0px 60px 0px;
 }
 .features {
-    display: flex;      
+    /* display: flex;       */
     list-style: 0;
 }
-.item::before {
+/* .item::before {
     display: block;
     content: "";    
     height: 112px;
@@ -458,8 +458,8 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F4F4FD;    
-}
-.item:nth-child(1)::before {     
+} */
+/* .item:nth-child(1)::before {     
     background-image: url("../img/antenna.svg");
     margin-bottom: 8px;    
 }
