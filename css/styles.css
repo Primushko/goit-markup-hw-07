@@ -771,6 +771,7 @@ header {
 .form-footer-submit:focus {
     background-color: #404BBF;
 } */
+    /* модальне вікно секції герой */
 .backdrop {
     position: fixed;
     top: 0;
