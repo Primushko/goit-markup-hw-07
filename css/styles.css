@@ -176,6 +176,16 @@ header {
     .navigation-link .link-item + .link-item {
         margin-left: 40px;
     }
+    .herro {
+        padding: 192px 0;
+        max-width: 1440px;  
+        min-height: 603px;
+    }
+    .herro-title {
+        margin-left: auto;
+        margin-right: auto;
+        width: 492px;
+    }
 }
 /* мобільне меню до 768 */
 @media screen and (max-width: 767px) {
@@ -251,7 +261,9 @@ header {
         line-height: 1.5;  
         letter-spacing: 0.02em;   
     }
-
+    .herro-title {
+        margin-bottom: 72px;
+    }
 }
 .container-nav {
     display: flex;
@@ -398,10 +410,8 @@ header {
 } */
 /* section-herro */
 .herro {
-    /* padding: 192px 0;     */
-    text-align: center;  
-    /* max-width: 1440px;  
-    min-height: 603px; */
+    padding: 112px 0px 112px 0px;    
+    text-align: center;      
     margin-left: auto;
     margin-right: auto; 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/peopleoffice1.jpg);
@@ -410,13 +420,10 @@ header {
     background-size: cover;     
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.herro-title {  
-    /* margin: 0 auto 96px auto; */
-    /* width: 492px;      */
+.herro-title {            
     font-weight: 500;
     font-size: 36px;
-    line-height: 1.1;  
-    /* text-align: center;    */
+    line-height: 1.1;    
     letter-spacing: 0.02em;    
     color: var(--white-text-color);
 }
@@ -444,7 +451,7 @@ header {
     /* section-features */
 .section-features {        
     background-color: var(--white-text-color); 
-    padding: 120px 0px 60px 0px;
+    /* padding: 120px 0px 60px 0px; */
 }
 .features {
     /* display: flex;       */
