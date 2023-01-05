@@ -53,7 +53,7 @@ a {
     letter-spacing: 0.02em;    
     color: var(--navyblue-color);
 }
-/* .title-header2 {  
+.title-header2 {  
     margin-top: 0;  
     margin-bottom: 72px;       
     font-weight: 500;
@@ -70,7 +70,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navyblue-color);
-} */
+}
 /* .container {    
     width: 1158px;
     margin: 0 auto;
@@ -160,13 +160,49 @@ header {
         letter-spacing: 0.04em;
         color: #434455;    
     }
+    .herro {
+        padding: 112px 0px 112px 0px;
+    }
     .herro-title {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
         width: 494px;
     }
+    .section-features {          
+        padding: 96px 0px 96px 0px;     
+        background-color: var(--white-text-color);         
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;     
+        list-style: none;
+    }
+    .title-header3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+    .text-body {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .item {
+        flex-basis: calc((100%-24px)/2);
+        /* display: block; */
+        max-width: 356px;
+        margin-bottom: 96px;
+    }
 }
+        /* меню компа від 1200 */
 @media screen and (min-width: 1200px) {
     .container {
         width: 1160px;        
@@ -183,7 +219,7 @@ header {
         margin-left: 40px;
     }
     .herro {
-        padding: 192px 0;
+        padding: 188px 0px 188px 0px;
         max-width: 1440px;  
         min-height: 603px;
     }
@@ -192,6 +228,9 @@ header {
         margin-right: auto;
         margin-bottom: 48px;
         width: 494px;
+    }
+    .section-features {
+        padding: 120px 0px 120px 0px;
     }
 }
 /* мобільне меню до 768 */
@@ -257,8 +296,7 @@ header {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
     } 
     .mobile-social-list {
-        display: flex;
-        /* justify-content: center; */
+        display: flex;        
         gap: 56px;    
     }
     .mobile-navigation-link {
@@ -268,7 +306,30 @@ header {
         line-height: 1.5;  
         letter-spacing: 0.02em;   
     }
+    .herro {
+        padding: 112px 0px 112px 0px;
+    }
     .herro-title {
+        margin-bottom: 72px;
+    }
+    .section-features {   
+        padding: 96px 0px 96px 0px;   
+    }
+    .title-header3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+    }
+    .text-body {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .item {
         margin-bottom: 72px;
     }
 }
@@ -415,9 +476,8 @@ header {
 .navigation-link .link-item + .link-item {
     margin-left: 40px;
 } */
-/* section-herro */
-.herro {
-    padding: 112px 0px 112px 0px;    
+        /* section-herro */
+.herro {    
     text-align: center;      
     margin-left: auto;
     margin-right: auto; 
@@ -455,15 +515,14 @@ header {
 .button:focus {    
     background-color: var(--button-click-color);
 }
-    /* section-features */
-.section-features {        
-    background-color: var(--white-text-color); 
-    /* padding: 120px 0px 60px 0px; */
+        /* section-features */
+/* .section-features {        
+    background-color: var(--white-text-color);     
 }
 .features {
-    /* display: flex;       */
+    display: flex;     
     list-style: 0;
-}
+}  */
 /* .item::before {
     display: block;
     content: "";    
@@ -472,7 +531,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F4F4FD;    
-} */
+}  */
 /* .item:nth-child(1)::before {     
     background-image: url("../img/antenna.svg");
     margin-bottom: 8px;    
