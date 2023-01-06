@@ -84,6 +84,8 @@ header {
     padding-left: 16px;
     padding-right: 16px;    
 }
+
+        /* мобільне меню від 480 */
 @media screen and (min-width: 480px) {
     .container {
         width: 428px;
@@ -94,7 +96,8 @@ header {
         display: none;
     } */
 }
-/* планштне меню до 1200 */
+
+        /* планштне меню від 768 */
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;        
@@ -104,10 +107,7 @@ header {
     }
     .mobile-menu-open {
         display: none;
-    }
-    /* .section-going {
-        display: none;
-    }     */
+    }   
     .navigation {   
         display: flex;
         align-items: center;    
@@ -198,6 +198,7 @@ header {
         color: #434455;
     }     
 }
+        /* мобільне меню до 1200 */
 @media screen and (max-width: 1199px) {
     .item {
         flex-basis: calc((100%-24px)/2);
@@ -250,7 +251,23 @@ header {
         justify-content: center;
         gap: 24px;    
     } 
+        /* section-customers */
+    .logo-company {
+        /* display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 72px;     
+        list-style: none;       
+        padding: 0;
+        margin: 0 auto;      */
+    } 
+    .logo-icon {
+        /* justify-content: center;         */
+        max-width: 190px;
+        height: 88px;
+    } 
 }
+
         /* меню компа від 1200 */
 @media screen and (min-width: 1200px) {
     .container {
@@ -365,8 +382,23 @@ header {
         justify-content: center;
         gap: 24px;    
     }
+    /* section-customers */
+    .logo-company {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    } 
+    .logo-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        border-radius: 4px;
+        width: calc((100%-5*24px) / 6);
+        height: 88px;    
+    } 
 }
-/* мобільне меню до 768 */
+
+        /* мобільне меню до 768 */
 @media screen and (max-width: 767px) {
     .navigation {
         display: none;
@@ -499,8 +531,25 @@ header {
         display: flex;
         justify-content: center;
         gap: 24px;    
-    }
+    }    
+    /* section-customers */
+    .logo-company {
+        /* display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 72px;     
+        list-style: none;        */
+        /* padding: 0;
+        margin: 0 auto;      */
+    } 
+    .logo-icon {
+        justify-content: center;        
+        max-width: 190px;
+        height: 88px;
+    } 
 }
+
+    /* ЗАГАЛЬНІ СТИЛІ */
 .nav-block {
     display: flex;
     align-items: center;
@@ -561,6 +610,7 @@ header {
 .logo-container .logo-web {
     margin-bottom: 16px;
 }
+
 /* .logo-footer-web {
     display: flex;
     align-items: center;
@@ -584,6 +634,7 @@ header {
     text-transform: uppercase;
     color: var(--cloud-color);
 } */
+
 /* navigation */
 /* .navigation {   
     display: flex;
@@ -648,6 +699,7 @@ header {
 .navigation-link .link-item + .link-item {
     margin-left: 40px;
 } */
+
         /* section-herro */
 .herro {    
     text-align: center;      
@@ -687,25 +739,19 @@ header {
 .button:focus {    
     background-color: var(--button-click-color);
 }
+
     /* section-customers */
-/* .section-customers {
-    display: block;
+.section-customers {
+    /* display: block; */
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.logo-company {
+/* .logo-company {
     display: flex;
     justify-content: center;
     gap: 24px;
-} 
-.logo-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    border-radius: 4px;
-    width: calc((100%-5*24px) / 6);
-    height: 88px;    
-} 
+}  */
+
 .logo-icon-link {
     display: flex;
     justify-content: center;
@@ -724,7 +770,8 @@ header {
 }
 .logo-icon-company {
     fill: currentColor;
-} */
+}
+
     /* section-filters */
 /* .sectionportfolio {
     padding: 96px 0px 120px 0px;
@@ -926,6 +973,7 @@ header {
 .form-footer-submit:focus {
     background-color: #404BBF;
 } */
+
     /* модальне вікно секції герой */
 .backdrop {
     position: fixed;
