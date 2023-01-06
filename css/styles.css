@@ -462,15 +462,13 @@ header {
         letter-spacing: 0.02em;
         color: #434455;
     }
-    .item {   
-        /* margin-left: auto;
-        margin-right: auto;      */
-        /* margin-bottom: 72px;         */
-    }    
     .section-team {                        
         background-color: var(--cloud-color);
         padding: 96px 0 128px 0;
-    }         
+    } 
+    .team {
+        justify-content: center;        
+    }               
     .card-content { 
         margin-left: auto;
         margin-right: auto;        
