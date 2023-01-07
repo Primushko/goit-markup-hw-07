@@ -196,8 +196,21 @@ header {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-    }         
+    }
+    /* PORTFOLIO ПЛАНШЕТ*/
+    .sectionportfolio {
+        padding: 64px 0px 96px 0px;
+    }   
+    .filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 64px;
+    }    
+    .filters .filters-item:not(:last-child) {
+        margin-right: 24px;
+    }   
 }
+
         /* мобільне меню до 1200 */
 @media screen and (max-width: 1199px) {
     .item {
@@ -457,6 +470,18 @@ header {
     .form-footer {
         display: flex;    
     }
+    /* PORTFOLIO  КОМПЬЮТЕР */
+    .sectionportfolio {
+        padding: 96px 0px 120px 0px;
+    }
+    .filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 72px;
+    }
+    .filters .filters-item:not(:last-child) {
+        margin-right: 24px;
+    }
 }
 
 
@@ -607,8 +632,7 @@ header {
         justify-content: center;
         gap: 24px;    
     }    
-    /* section-customers */
-    
+    /* section-customers */    
     .container .logo-company { 
         max-width: 396px;
         padding: 0;   
@@ -670,9 +694,30 @@ header {
     }   
     .form-footer-submit {
         margin-left: 0;
+    }    
+    .form-footer {
+        display: block;
+        padding: 0;
+        margin: 0 auto;
     }
-}
+    /* PORTFOLIO МОБІЛЬНИЙ*/
+    .sectionportfolio {
+        padding: 48px 0px 48px 0px;
+        max-width: 396px;
+        margin: 0;
+    }    
+    .filters {
+        display: flex;
+        flex-wrap: wrap;        
+        gap: 16px;      
+        margin-bottom: 48px;
+    }
+    .filters .filters-item:not(:last-child) {
+    margin-right: 8px;
+    }
 
+
+}
     /* ЗАГАЛЬНІ СТИЛІ */
 .nav-block {
     display: flex;
@@ -734,7 +779,6 @@ header {
 .logo-container .logo-web {
     margin-bottom: 16px;
 }
-
 .logo-footer-web {
     display: flex;
     align-items: center;
@@ -895,20 +939,7 @@ header {
 .logo-icon-company {
     fill: currentColor;
 }
-
-    /* section-filters */
-/* .sectionportfolio {
-    padding: 96px 0px 120px 0px;
-}
-.filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 72px;
-        
-}
-.filters .filters-item:not(:last-child) {
-    margin-right: 24px;
-}
+    /* PORTFOLIO */
 .buttons {
     background-color: var(--cloud-color);    
     border-radius: 4px; 
@@ -928,9 +959,9 @@ header {
     color: #FFFFFF; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-} */
+}
     /* .flex-container */
-/* .flex-container {    
+.flex-container {    
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -983,7 +1014,7 @@ header {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-} */
+}
 
     /* footer */
 .footer-dark { 
