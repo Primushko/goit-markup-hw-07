@@ -196,7 +196,7 @@ header {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-    }     
+    }         
 }
         /* мобільне меню до 1200 */
 @media screen and (max-width: 1199px) {
@@ -252,6 +252,13 @@ header {
         gap: 24px;    
     } 
         /* section-customers */
+    .container .logo-company { 
+        display: block;               
+        max-width: 552px;
+        padding: 0;   
+        margin: 0 auto;     
+        list-style: none;        
+    }
     .logo-company {
         /* display: flex;
         flex-wrap: wrap;
@@ -261,13 +268,30 @@ header {
         padding: 0;
         margin: 0 auto;      */
     } 
-    .logo-icon {
-        /* justify-content: center;         */
-        max-width: 190px;
+    .logo-icon {        
+        max-width: 168px;
         height: 88px;
     } 
+        /* FOOTER */
+        .footer-dark.container {
+            max-width: 552px;
+        }
+        .logo-container {
+            max-width: 264px;
+        }
+        .social-container {
+            max-width: 208px;
+        }
+        .social-list-footer {
+            display: flex;
+            justify-content: center;
+            gap: 16px; 
+        }
+        .form-footer {
+            display: flex;
+            gap: 24px;
+        }        
 }
-
         /* меню компа від 1200 */
 @media screen and (min-width: 1200px) {
     .container {
@@ -396,7 +420,52 @@ header {
         width: calc((100%-5*24px) / 6);
         height: 88px;    
     } 
+    /* FOOTER */
+    .footer-dark.container {
+        max-width: 1128px;
+    }
+    .footer-dark .container {
+        display: flex;
+        align-items: baseline;
+    }
+    .logo-container {
+        display: block;    
+        width: 264px;
+        height: auto;    
+    }
+    .social-container {
+        display: block;
+        margin-left: 120px;      
+    }
+    .social-list-footer {
+        display: flex;
+        justify-content: left;
+        gap: 16px;    
+    }
+    .form-footer-subscribe {
+        display: flex;
+    }
+    .form-container {
+        margin-left: auto;
+    }
+    .form-footer {
+        display: flex;    
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /* мобільне меню до 768 */
 @media screen and (max-width: 767px) {
@@ -533,23 +602,69 @@ header {
         gap: 24px;    
     }    
     /* section-customers */
-    .section-customers {        
-        max-width: 396px;       
+    
+    .container .logo-company { 
+        max-width: 396px;
+        padding: 0;   
+        margin: 0 auto;     
+        list-style: none;        
     }
-    .logo-company {
-        /* display: flex;
+    .logo-company {        
+        display: flex;
         flex-wrap: wrap;
-        column-gap: 16px;
-        row-gap: 72px;     
-        list-style: none;        */
-        /* padding: 0;
-        margin: 0 auto;      */
+        width: calc((100%-16px) / 2);        
     } 
-    .logo-icon {
+    .logo-icon {        
         justify-content: center;        
         max-width: 190px;
         height: 88px;
-    } 
+    }     
+    /* FOOTER */
+    .logo-container {
+        display: block;    
+        max-width: 268px;
+        height: auto; 
+        margin-left: auto; 
+        margin-right: auto;        
+    }
+    .text-footer-body {
+        margin-bottom: 72px; 
+    }
+    .social-container {
+        display: block;
+        max-width: 208px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;   
+    }
+    .social-list-footer {
+        display: flex;
+        justify-content: center;
+        gap: 16px; 
+        margin-bottom: 72px;        
+    }
+    .title-header3-footer {
+        text-align: center;
+    }
+    .logo-footer-web {
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+    .logo-footer-studio {
+        justify-content: center;
+    }
+    .title-header3-form {
+        text-align: center;
+    }
+    .form-footer-subscribe {
+        display: block;         
+        padding: 0;
+        width: 100%;
+        margin-bottom: 16px; 
+    }   
+    .form-footer-submit {
+        margin-left: 0;
+    }
 }
 
     /* ЗАГАЛЬНІ СТИЛІ */
@@ -745,7 +860,7 @@ header {
 
     /* section-customers */
 .section-customers {
-    /* display: block; */
+    display: block;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -863,16 +978,13 @@ header {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 } */
+
     /* footer */
 .footer-dark { 
     background-color: var(--navyblue-color);
     padding-top: 100px;
     padding-bottom: 100px;
 }
-/* .footer-dark .container {
-    display: flex;
-    align-items: baseline;
-} */
 .text-footer-body {
     font-family: 'Roboto';    
     font-size: 16px;
@@ -880,15 +992,6 @@ header {
     letter-spacing: 0.02em;
     color: var(--border-color);
 }
-/* .logo-container {
-    display: block;    
-    width: 264px;
-    height: auto;    
-} */
-/* .social-container {
-    display: block;
-    margin-left: 120px;      
-} */
 .title-header3-footer {
     margin: 0px 0px 16px 0px;
     font-weight: 500;
@@ -897,12 +1000,7 @@ header {
     letter-spacing: 0.02em;
     color: var(--white-text-color);
 }
-/* .social-list-footer {
-    display: flex;
-    justify-content: left;
-    gap: 16px;    
-} */
-/* .social-footer-link {
+.social-footer-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -911,7 +1009,7 @@ header {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 .social-footer-icon {
     fill: #F4F4FD;
 }
@@ -920,22 +1018,15 @@ header {
     background-color: #31D0AA;
     cursor: pointer;
 }
-/* .title-header3-form {
+.title-header3-form {
     margin: 0px 0px 16px 0px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-text-color);
-} */
-/* .form-container {
-    margin-left: auto;
-} */
-/* .form-footer {
-    display: flex;    
-} */
-/* .form-footer-subscribe {
-    display: flex;
+}
+.form-footer-subscribe {    
     width: 264px;
     height: 40px;
     padding: 8px 16px 8px 16px;   
@@ -948,11 +1039,11 @@ header {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--navyblue-color);
-} */
-/* .form-footer-icon {
+}
+.form-footer-icon {
     margin: 0;    
-} */
-/* .form-footer-submit {   
+}
+.form-footer-submit {   
     display: flex;     
     align-items: center;       
     padding: 8px 24px;  
@@ -971,11 +1062,11 @@ header {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-/* .form-footer-submit:hover,
+}
+.form-footer-submit:hover,
 .form-footer-submit:focus {
     background-color: #404BBF;
-} */
+}
 
     /* модальне вікно секції герой */
 .backdrop {
