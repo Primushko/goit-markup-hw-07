@@ -64,7 +64,6 @@ a {
     color: var(--navyblue-color);
 }
 .title-header3 {  
-    margin: 0px 0px 8px 0px;           
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -164,6 +163,12 @@ header {
         margin-bottom: 40px;
         width: 494px;
     }
+        /* FEATURES для планшета */
+    .item {
+        flex-basis: calc((100%-24px)/2);
+        max-width: 356px;
+        margin-bottom: 96px;
+    }
     .section-features {          
         padding: 96px 0px 96px 0px;     
         background-color: var(--white-text-color);         
@@ -182,7 +187,7 @@ header {
         letter-spacing: 0.02em;
         color: #434455;
     }
-        /* PORTFOLIO ПЛАНШЕТ*/
+        /* PORTFOLIO для планшета*/
     .sectionportfolio {
         padding: 64px 0px 96px 0px;
     }   
@@ -220,12 +225,7 @@ header {
     }
 }
         /* мобільне меню до 1200 */
-@media screen and (max-width: 1199px) {
-    .item {
-        flex-basis: calc((100%-24px)/2);
-        max-width: 356px;
-        margin-bottom: 96px;
-    }  
+@media screen and (max-width: 1199px) {    
     .section-going {
         display: none;
     } 
@@ -292,7 +292,7 @@ header {
         width: 168px;
         height: 88px;
     } 
-        /* FOOTER */
+        /* FOOTER для планшета */
     .footer-dark.container {
         max-width: 552px;
     }
@@ -355,7 +355,8 @@ header {
         display: flex;
         padding: 120px 0px 120px 0px;
         background-color: var(--white-text-color);   
-    }    
+    }  
+        /* FEATURES для компютера   */
     .features {
         display: flex;     
         list-style: 0;
@@ -438,7 +439,7 @@ header {
         justify-content: center;
         gap: 24px;    
     }
-    /* CUSTOMERS для компьютера */  
+        /* CUSTOMERS для компьютера */  
     .section-customers {
         display: block;
         padding-top: 120px;
@@ -457,7 +458,7 @@ header {
         width: calc((100%-5*24px) / 6);
         height: 88px;    
     } 
-    /* FOOTER */
+        /* FOOTER для компютера*/
     .footer-dark.container {
         max-width: 1128px;
     }
@@ -488,7 +489,7 @@ header {
     .form-footer {
         display: flex;    
     }
-    /* PORTFOLIO  КОМПЬЮТЕР */
+        /* PORTFOLIO для компютера */
     .sectionportfolio {
         padding: 96px 0px 120px 0px;
     }
@@ -590,6 +591,7 @@ header {
     .herro-title {
         margin-bottom: 72px;
     }
+        /* FEATURES для мобілкі */
     .section-features {   
         padding: 96px 0px 0px 0px;   
     }
@@ -606,6 +608,7 @@ header {
         letter-spacing: 0.02em;
         color: #434455;
     }
+        /* SECTION-TEAM для мобілкі */
     .section-team {                        
         background-color: var(--cloud-color);
         padding: 96px 0 128px 0;
@@ -664,7 +667,7 @@ header {
         width: 190px;
         height: 88px;
     }
-    /* FOOTER */
+    /* FOOTER для мобілкі */
     .logo-container {
         display: block;    
         max-width: 268px;
@@ -715,7 +718,7 @@ header {
         padding: 0;
         margin: 0 auto;
     }
-    /* PORTFOLIO МОБІЛЬНИЙ*/
+    /* PORTFOLIO для мобілкі*/
     .sectionportfolio {
         padding: 48px 0px 0px 0px;
         max-width: 428px;
@@ -744,7 +747,6 @@ header {
         color: #2E2F42;
     }   
 }
-
     /* ЗАГАЛЬНІ СТИЛІ */
 .nav-block {
     display: flex;
@@ -778,7 +780,7 @@ header {
     background-color: #31D0AA;
     cursor: pointer;
 }
-/* LOGO */
+/* LOGO загальні */
 .logo-web {  
     display: flex; 
     align-items: center;
@@ -829,7 +831,7 @@ header {
     text-transform: uppercase;
     color: var(--cloud-color);
 }
-    /* СЕКЦІЯ "HERRO" */
+    /* СЕКЦІЯ "HERRO" загальні */
 .herro {    
     text-align: center;      
     margin-left: auto;
@@ -892,7 +894,7 @@ header {
 .logo-icon-company {
     fill: currentColor;
 }
-    /* PORTFOLIO */
+    /* PORTFOLIO загальні */
 .buttons {
     background-color: var(--cloud-color);    
     border-radius: 4px; 
@@ -954,7 +956,7 @@ header {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-    /* footer */
+    /* FOOTER загальний */
 .footer-dark { 
     background-color: var(--navyblue-color);
     padding-top: 100px;
