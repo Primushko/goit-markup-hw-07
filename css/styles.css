@@ -82,7 +82,9 @@ header {
         /* мобільне меню від 480 */
 @media screen and (min-width: 480px) {
     .container {
-        width: 428px;        
+        width: 428px;
+        margin-left: auto;
+        margin-right: auto;        
     }   
 }
 
