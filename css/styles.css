@@ -185,7 +185,7 @@ header {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-    }
+    }        
         /* PORTFOLIO для планшета*/
     .sectionportfolio {
         padding: 64px 0px 96px 0px;
@@ -223,7 +223,18 @@ header {
         color: #2E2F42;
     }
 }
+
         /* МOБІЛЬНЕ І ПЛАНШЕТНЕ меню до 1200 */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        /* FOOTER для планшета */
+    .footer-dark .container { 
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 24px;
+        row-gap: 72px;      
+        max-width: 552px;
+    }
+}
 @media screen and (max-width: 1199px) {    
     .section-going {
         display: none;
@@ -291,14 +302,7 @@ header {
         width: 168px;
         height: 88px;
     } 
-        /* FOOTER для планшета */
-    .footer-dark .container { 
-        display: flex;
-        flex-wrap: wrap; 
-        gap: 24px;
-        row-gap: 72px;      
-        max-width: 552px;
-    }
+        /* FOOTER для планшета */   
     .logo-container {
         max-width: 264px;
     }
