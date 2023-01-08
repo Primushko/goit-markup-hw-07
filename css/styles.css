@@ -82,9 +82,7 @@ header {
         /* мобільне меню від 480 */
 @media screen and (min-width: 480px) {
     .container {
-        width: 428px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 428px;        
     }   
 }
 
@@ -292,24 +290,24 @@ header {
         height: 88px;
     } 
         /* FOOTER */
-        .footer-dark.container {
-            max-width: 552px;
-        }
-        .logo-container {
-            max-width: 264px;
-        }
-        .social-container {
-            max-width: 208px;
-        }
-        .social-list-footer {
-            display: flex;
-            justify-content: center;
-            gap: 16px; 
-        }
-        .form-footer {
-            display: flex;
-            gap: 24px;
-        }        
+    .footer-dark.container {
+        max-width: 552px;
+    }
+    .logo-container {
+        max-width: 264px;
+    }
+    .social-container {
+        max-width: 208px;
+    }
+    .social-list-footer {
+        display: flex;
+        justify-content: center;
+        gap: 16px; 
+    }
+    .form-footer {
+        display: flex;
+        gap: 24px;
+    }        
 }
         /* меню компа від 1200 */
 @media screen and (min-width: 1200px) {
@@ -560,6 +558,14 @@ header {
         color: #2E2F42;     
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
     } 
+    .mobile-navigation-link .mobile-link-padding {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .mobile-navigation {
+        margin-bottom: 284px;
+    }
     .mobile-social-list {
         display: flex;        
         gap: 56px;    
@@ -1032,7 +1038,7 @@ header {
 .form-footer-submit:focus {
     background-color: #404BBF;
 }
-    /* МЩДАЛЬНЕ ВІКНО СЕКЦІЇ "HERRO" */
+    /* МOДАЛЬНЕ ВІКНО СЕКЦІЇ "HERRO" */
 .backdrop {
     position: fixed;
     top: 0;
