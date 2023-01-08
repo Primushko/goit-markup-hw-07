@@ -166,8 +166,7 @@ header {
         /* FEATURES для планшета */
     .item {
         flex-basis: calc((100%-24px)/2);
-        max-width: 356px;
-        margin-bottom: 96px;
+        max-width: 356px;        
     }
     .section-features {          
         padding: 96px 0px 96px 0px;     
@@ -224,7 +223,7 @@ header {
         color: #2E2F42;
     }
 }
-        /* МЩБІЛЬНЕ І ПЛАНШЕТНЕ меню до 1200 */
+        /* МOБІЛЬНЕ І ПЛАНШЕТНЕ меню до 1200 */
 @media screen and (max-width: 1199px) {    
     .section-going {
         display: none;
@@ -293,7 +292,11 @@ header {
         height: 88px;
     } 
         /* FOOTER для планшета */
-    .footer-dark.container {
+    .footer-dark .container { 
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 24px;
+        row-gap: 72px;      
         max-width: 552px;
     }
     .logo-container {
@@ -603,9 +606,9 @@ header {
     }
         /* FEATURES для мобілкі */
     .section-features {   
-        padding: 96px 0px 0px 0px;   
-    }
-    .title-header3 {        
+        padding: 96px 0px 96px 0px;   
+    }    
+    .title-header3 {              
         font-weight: 700;
         font-size: 36px;
         line-height: 1.1;
@@ -639,8 +642,7 @@ header {
     .card-thumb  {
         margin-left: auto;
         margin-right: auto;        
-        width: 264px;
-        margin-bottom: 72px;
+        width: 264px;        
     }
     .card-content .title-header3 {
         font-weight: 500;
@@ -657,11 +659,9 @@ header {
         justify-content: center;
         gap: 24px;    
     }    
-    /* CUSTOMERS для мобілкі */ 
+    /* CUSTOMERS для мобілкі */     
     .section-customers {
         padding: 96px 0px;
-    }
-    .section-customers {
         margin-left: auto;
         margin-right: auto;
     }
@@ -1014,10 +1014,9 @@ header {
     letter-spacing: 0.02em;
     color: var(--white-text-color);
 }
-.form-footer-subscribe {    
-    /* width: 264px; */
-    height: 40px;
-    /* padding: 8px 16px 8px 16px;    */
+.form-footer-subscribe {      
+    height: 40px;  
+    padding: 8px 16px 8px 16px;  
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -1028,9 +1027,7 @@ header {
     border-radius: 4px;
     background-color: var(--navyblue-color);
 }
-.form-footer-icon {
-    margin: 0;    
-}
+
 .form-footer-submit {   
     display: flex;     
     align-items: center;       
