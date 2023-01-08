@@ -182,7 +182,7 @@ header {
         letter-spacing: 0.02em;
         color: #434455;
     }
-    /* PORTFOLIO ПЛАНШЕТ*/
+        /* PORTFOLIO ПЛАНШЕТ*/
     .sectionportfolio {
         padding: 64px 0px 96px 0px;
     }   
@@ -271,7 +271,27 @@ header {
         display: flex;
         justify-content: center;
         gap: 24px;    
-    }  
+    } 
+        /* CUSTOMERS для планшета */
+    .section-customers {
+        padding: 96px 0px;
+    }
+    .section-customers {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-company {        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 72px;                      
+    } 
+    .logo-icon {        
+        justify-content: center;        
+        width: 168px;
+        height: 88px;
+    } 
         /* FOOTER */
     .footer-dark.container {
         max-width: 552px;
@@ -418,7 +438,12 @@ header {
         justify-content: center;
         gap: 24px;    
     }
-    /* CUSTOMERS для компьютера */     
+    /* CUSTOMERS для компьютера */  
+    .section-customers {
+        display: block;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }   
     .logo-company {
         display: flex;
         justify-content: center;
@@ -478,7 +503,6 @@ header {
         height: 300px;
     }    
 }
-
         /* мобільне меню до 768 */
 @media screen and (max-width: 767px) {
     .navigation {
@@ -567,7 +591,7 @@ header {
         margin-bottom: 72px;
     }
     .section-features {   
-        padding: 96px 0px 96px 0px;   
+        padding: 96px 0px 0px 0px;   
     }
     .title-header3 {        
         font-weight: 700;
@@ -621,24 +645,25 @@ header {
         gap: 24px;    
     }    
     /* CUSTOMERS для мобілкі */ 
-        
-    /* .container .logo-company { 
-        max-width: 396px;
-        padding: 0;   
-        margin: 0 auto;     
-        list-style: none;        
+    .section-customers {
+        padding: 96px 0px;
+    }
+    .section-customers {
+        margin-left: auto;
+        margin-right: auto;
     }
     .logo-company {        
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
-        width: calc((100%-16px) / 2);        
+        gap: 16px;
+        row-gap: 72px;                      
     } 
     .logo-icon {        
         justify-content: center;        
-        max-width: 190px;
+        width: 190px;
         height: 88px;
-    }      */
-    
+    }
     /* FOOTER */
     .logo-container {
         display: block;    
@@ -843,34 +868,7 @@ header {
 .button:focus {    
     background-color: var(--button-click-color);
 }
-    /* CUSTOMERS загальні */   
-            
-.section-customers {
-    display: block;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-/* .container .logo-company { 
-    display: block;               
-    max-width: 552px;
-    padding: 0;   
-    margin: 0 auto;     
-    list-style: none;        
-} */
-/* .logo-company {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-}  */
-/* .logo-company {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 16px;
-    row-gap: 72px;     
-    list-style: none;       
-    padding: 0;
-    margin: 0 auto;     
-}  */
+    /* CUSTOMERS загальні */  
 .logo-icon-link {
     display: flex;
     justify-content: center;
@@ -888,14 +886,12 @@ header {
     border: 1px solid var(--button-click-color);
 }
 .logo-icon {        
-    max-width: 168px;
+    max-width: 190px;
     height: 88px;
 }
 .logo-icon-company {
     fill: currentColor;
 }
-
-
     /* PORTFOLIO */
 .buttons {
     background-color: var(--cloud-color);    
