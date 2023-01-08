@@ -91,7 +91,9 @@ header {
         /* планштне меню від 768 */
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;        
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;          
     }  
     .mobile-menu {
         display: none;
@@ -269,28 +271,7 @@ header {
         display: flex;
         justify-content: center;
         gap: 24px;    
-    } 
-        /* section-customers */
-    .container .logo-company { 
-        display: block;               
-        max-width: 552px;
-        padding: 0;   
-        margin: 0 auto;     
-        list-style: none;        
-    }
-    /* .logo-company {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 16px;
-        row-gap: 72px;     
-        list-style: none;       
-        padding: 0;
-        margin: 0 auto;     
-    }  */
-    .logo-icon {        
-        max-width: 168px;
-        height: 88px;
-    } 
+    }  
         /* FOOTER */
     .footer-dark.container {
         max-width: 552px;
@@ -437,7 +418,7 @@ header {
         justify-content: center;
         gap: 24px;    
     }
-    /* section-customers */
+    /* CUSTOMERS для компьютера */     
     .logo-company {
         display: flex;
         justify-content: center;
@@ -639,8 +620,9 @@ header {
         justify-content: center;
         gap: 24px;    
     }    
-    /* section-customers */    
-    .container .logo-company { 
+    /* CUSTOMERS для мобілкі */ 
+        
+    /* .container .logo-company { 
         max-width: 396px;
         padding: 0;   
         margin: 0 auto;     
@@ -655,7 +637,8 @@ header {
         justify-content: center;        
         max-width: 190px;
         height: 88px;
-    }     
+    }      */
+    
     /* FOOTER */
     .logo-container {
         display: block;    
@@ -860,16 +843,33 @@ header {
 .button:focus {    
     background-color: var(--button-click-color);
 }
-    /* section-customers */
+    /* CUSTOMERS загальні */   
+            
 .section-customers {
     display: block;
     padding-top: 120px;
     padding-bottom: 120px;
 }
+/* .container .logo-company { 
+    display: block;               
+    max-width: 552px;
+    padding: 0;   
+    margin: 0 auto;     
+    list-style: none;        
+} */
 /* .logo-company {
     display: flex;
     justify-content: center;
     gap: 24px;
+}  */
+/* .logo-company {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;     
+    list-style: none;       
+    padding: 0;
+    margin: 0 auto;     
 }  */
 .logo-icon-link {
     display: flex;
@@ -887,9 +887,15 @@ header {
     color: var(--button-click-color);
     border: 1px solid var(--button-click-color);
 }
+.logo-icon {        
+    max-width: 168px;
+    height: 88px;
+}
 .logo-icon-company {
     fill: currentColor;
 }
+
+
     /* PORTFOLIO */
 .buttons {
     background-color: var(--cloud-color);    
