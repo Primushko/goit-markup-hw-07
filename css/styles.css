@@ -851,12 +851,24 @@ header {
     text-align: center;      
     margin-left: auto;
     margin-right: auto; 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/peopleoffice1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/mobile/office_mob.jpg);
     background-repeat: no-repeat; 
     background-position: center;    
     background-size: cover;     
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-wedth: 767px), 
+    screen and (min-resolution: 192dpi) and (max-wedth: 767px),
+    screen and (min-resolution: 2dppx) and (max-wedth: 767px) {
+    .herro {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/mobile/office_mob@2x.jpg);
+    }
+}
+@media screen and (max-wedth: 768px) {
+    .herro {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/tablet/Dark-bg_t.jpg);
+    }
+} 
 .herro-title {            
     font-weight: 500;
     font-size: 36px;
