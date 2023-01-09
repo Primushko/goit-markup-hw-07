@@ -560,6 +560,8 @@ header {
         padding-left: 40px;
         padding-top: 80px;
         padding-bottom: 40px;
+        width: 100vw;
+        height: 100vh;
     }
     .mobile-menu-close-btn {
         position: absolute;
