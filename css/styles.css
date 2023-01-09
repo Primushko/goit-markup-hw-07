@@ -211,7 +211,7 @@ header {
     .flex {
         display: block;
         width: 356px;
-        height: 300px;
+        height: auto;
     }
     .portfolio-card .title-header3 {
         font-family: 'Roboto';
@@ -560,8 +560,8 @@ header {
         padding-left: 40px;
         padding-top: 80px;
         padding-bottom: 40px;
-        width: 100vw;
-        height: 100vh;        
+        /* width: 100vw;
+        height: 100vh;         */
     }
     .mobile-menu-close-btn {
         position: absolute;
