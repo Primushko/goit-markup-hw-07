@@ -561,7 +561,7 @@ header {
         padding-top: 80px;
         padding-bottom: 40px;
         width: 100vw;
-        height: 100vh;
+        height: 100vh;        
     }
     .mobile-menu-close-btn {
         position: absolute;
@@ -591,13 +591,13 @@ header {
         line-height: 1.2;
     }
     .mobile-navigation {
-        margin-bottom: 284px;
+        margin-bottom: auto;
     }
     .mobile-social-list {
         display: flex;        
         gap: 56px;    
     }
-    .mobile-navigation-link {
+    .mobile-navigation-link {       
         margin-bottom: 40px;
         font-family: 'Roboto';     
         font-size: 16px;
@@ -859,35 +859,35 @@ header {
     background-size: cover;     
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-wedth: 767px), 
-    screen and (min-resolution: 192dpi) and (max-wedth: 767px),
-    screen and (min-resolution: 2dppx) and (max-wedth: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), 
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .herro {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/mobile/office_mob@2x.jpg);
     }
 }
-@media screen and (max-wedth: 768px) {
+@media screen and (min-width: 768px) {
     .herro {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/tablet/Dark-bg_t.jpg);
     }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-wedth: 768px), 
-    screen and (min-resolution: 192dpi) and (max-wedth: 768px),
-    screen and (min-resolution: 2dppx) and (max-wedth: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), 
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .herro {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/tablet/Dark-bg_t@2x.jpg);
     }
 }
-@media screen and (max-wedth: 1200px) {
+@media screen and (min-width: 1200px) {
     .herro {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/desktop/people-office\ 1.jpg);
     }
 } 
 
-@media screen and (min-device-pixel-ratio: 2) and (max-wedth: 1200px), 
-    screen and (min-resolution: 192dpi) and (max-wedth: 1200px),
-    screen and (min-resolution: 2dppx) and (max-wedth: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), 
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .herro {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/desktop/people-office\ 1@2x.jpg);
     }
