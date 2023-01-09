@@ -559,9 +559,7 @@ header {
         position: relative;
         padding-left: 40px;
         padding-top: 80px;
-        padding-bottom: 40px;
-        /* width: 100vw;
-        height: 100vh;         */
+        padding-bottom: 40px;       
     }
     .mobile-menu-close-btn {
         position: absolute;
@@ -571,7 +569,7 @@ header {
         border: none;
         padding: 0;
         line-height: 0;
-    }
+    }    
     .mobile-link-padding {  
         display: block;  
         position: relative;
