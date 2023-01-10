@@ -158,10 +158,11 @@ header {
         padding: 112px 0px 112px 0px;
     }
     .herro-title {
+        font-size: 56px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
-        width: 494px;
+        width: 494px;         
     }
         /* FEATURES для планшета */
     .item {
@@ -178,7 +179,14 @@ header {
         column-gap: 24px;
         row-gap: 48px;     
         list-style: none;
-    }    
+    } 
+    .title-header3 {              
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+    }
     .text-body {
         font-weight: 500;
         font-size: 16px;
@@ -329,8 +337,7 @@ header {
     .container {
         width: 1160px;        
     }
-    .footer-dark {
-        max-width: 1440px;
+    .footer-dark {        
         margin-left: auto;
         margin-right: auto;        
     }
@@ -358,21 +365,36 @@ header {
         min-height: 603px;
     }
     .herro-title {
+        font-size: 56px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 48px;
-        width: 494px;
+        margin-bottom: 48px; 
+        width: 494px;       
     }
+     /* FEATURES для компютера   */
     .section-features {
         display: flex;
         padding: 120px 0px 120px 0px;
         background-color: var(--white-text-color);   
-    }  
-        /* FEATURES для компютера   */
+    }        
     .features {
         display: flex;     
         list-style: 0;
     } 
+    .title-header3 {              
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+    }
+    .text-body {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
     .item {
         max-width: 264px;        
     }
@@ -606,17 +628,20 @@ header {
         padding: 112px 0px 112px 0px;
     }
     .herro-title {
+        font-size: 36px;
         margin-bottom: 72px;
     }
         /* FEATURES для мобілкі */
     .section-features {   
         padding: 96px 0px 96px 0px;   
     }    
-    .title-header3 {              
+    .title-header3 {                    
         font-weight: 700;
         font-size: 36px;
         line-height: 1.1;
         letter-spacing: 0.02em;
+        text-align: center;
+        margin-bottom: 8px;
     }
     .text-body {
         font-weight: 500;
@@ -624,6 +649,12 @@ header {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+    }
+    .item {
+        margin-bottom: 72px;
+    }
+    .item:last-child {
+        margin-bottom: 0;
     }
         /* SECTION-TEAM для мобілкі */
     .section-team {                        
@@ -891,12 +922,12 @@ header {
     }
 }
 
-.herro-title {            
-    font-weight: 500;
-    font-size: 36px;
+.herro-title { 
+    padding: 0;             
+    font-weight: 500;    
     line-height: 1.1;    
     letter-spacing: 0.02em;    
-    color: var(--white-text-color);
+    color: var(--white-text-color);   
 }
 .button { 
     align-items: center;          
