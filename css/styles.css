@@ -169,6 +169,11 @@ header {
         flex-basis: calc((100%-24px)/2);
         max-width: 356px;        
     }
+    .nav-item .link-padding {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    } 
+    
     .section-features {          
         padding: 96px 0px 96px 0px;     
         background-color: var(--white-text-color);         
@@ -247,21 +252,31 @@ header {
     .section-going {
         display: none;
     } 
+    .link-item .link-padding {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.3;
+        letter-spacing: 0.04em;       
+    } 
     .section-team {
         background-color: var(--cloud-color);
         padding: 96px 0 104px 0;
     }
-    /* section-team  */
+    /* OUR TEAM для планшета */   
     .team {
         display: flex;
         flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
         padding: 0;
         margin: 0;
         list-style: none;
+        max-width: 552px;  
     }
     .team .team-item {
         flex-basis: calc((100%-24px)/2);
-    }  
+        gap: 24px;
+    }     
     .card-thumb {
         margin-left: auto; 
         margin-right: auto;          
@@ -793,7 +808,7 @@ header {
         color: #2E2F42;
     }   
 }
-    /* ЗАГАЛЬНІ СТИЛІ */
+        /* ЗАГАЛЬНІ СТИЛІ */
 .nav-block {
     display: flex;
     align-items: center;
