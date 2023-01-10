@@ -590,7 +590,7 @@ header {
         visibility: visible;
         pointer-events: auto;
     }
-    .mobile-menu-container {
+    .mobile-menu-container {        
         position: relative;
         padding-left: 40px;
         padding-top: 80px;
@@ -634,7 +634,7 @@ header {
         font-size: 20px;
         line-height: 1.2;
     }
-    .mobile-navigation {
+    .mobile-navigation {        
         margin-bottom: auto;
     }
     .mobile-social-list {
@@ -806,8 +806,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        /* gap: 16px; */
-        max-width: 396px;       
+        width: 100%;        
     }
     .flex-element {
         margin-bottom: 48px;       
@@ -816,7 +815,7 @@ header {
         font-family: 'Roboto';        
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
